@@ -1,0 +1,26 @@
+$baseshadow: 1px 1px 5px;
+$basesize: 4em;
+
+.drum-pad {
+  transition: 0.25s;
+  height: $basesize;
+  width: $basesize * 1.2;
+  background-color: orange;
+  color: white;
+  font-size: 110%;
+  font-weight: 800;
+  border: none;
+  box-shadow: $baseshadow crimson;
+
+  cursor: pointer;
+
+  &:hover {
+    background: black;
+    box-shadow: $baseshadow greenyellow;
+  }
+
+  &.active {
+    background-color: crimson;
+    box-shadow: $baseshadow mintcream;
+  }
+}

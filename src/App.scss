@@ -1,0 +1,37 @@
+body {
+  background-color: darkblue;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  div#display {
+    min-width: 30em;
+    padding: 1em;
+    background-color: lavender;
+    border-radius: 1em;
+    box-shadow: black 9px 9px 20px 5px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+
+    section {
+      width: 50%;
+      &.pad-container {
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+
+      }
+    }
+  }
+}
